@@ -135,7 +135,7 @@ def calc_pipes(notes, pipe_lengths, odiam, idiam, material="Aluminium", cutting_
     idiam /= 1000
     pipe_lengths_adj = [scalar * i for i in pipe_lengths]  # convert to 0.1mm for int programming
 
-    elasticity = 68947573000  # TODO improve material allocation part basos
+    elasticity = 68947573000  # TODO improve material allocation part
     density = 2712.6307
 
     # i choose notes needed, assert this is an even number I think or maybe allow it to repeat first one if pentatonic

@@ -1,9 +1,7 @@
+""" Direct copy of the following multi knapsack solver from Google OR-tools: https://developers.google.com/optimization/pack/multiple_knapsack"""
+
 from ortools.linear_solver import pywraplp
 import sys
-import math
-
-
-# TODO ref this source for the solver
 
 
 def create_data_model(chime_lengths, pipe_lengths, notes):
@@ -80,6 +78,6 @@ def bin_solver_main(chime_lengths, pipe_lengths, notes, scalar):
                                "Chime Lengths (m)": (bin_items_lengths,),
                                "Hole Placement (m)": (hole_height,),
                                "Total Chime Length (m)": bin_weight / scalar}
-                total_list[f"Pipe {j} Length : {data["bin_capacities"][j] / scalar}m"] = cutting_fit
+                total_list[f"Pipe {j} Length : {data['bin_capacities'][j] / scalar}m"] = cutting_fit
 
     return total_list
