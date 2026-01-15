@@ -2,7 +2,7 @@ import numpy as np
 import math
 import pandas as pd
 import sys
-from multi_knapsack_solver import bin_solver_main
+from bin_packing_solver import bin_solver_main
 import copy
 
 

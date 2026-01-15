@@ -1,4 +1,4 @@
-""" Direct copy of the following multi knapsack solver from Google OR-tools: https://developers.google.com/optimization/pack/multiple_knapsack"""
+""" Direct copy of the following bin packing solver from Google OR-tools: https://developers.google.com/optimization/pack/bin_packing"""
 
 from ortools.linear_solver import pywraplp
 import sys
